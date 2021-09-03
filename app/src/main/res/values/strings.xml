@@ -1,0 +1,113 @@
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">Healthy Life App</string>
+    <string name="detail_activity">Detail</string>
+    <string name="activity_list_activity">Activity Record List</string>
+    <string name="login">Login</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="login_with_phone">Login with Phone</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="email_login">Login with Email</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_code">Enter code</string>
+    <string name="enter_pass">Enter your password</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="register">Register</string>
+    <string name="login_with_code">Login with code</string>
+    <string name="enter_phone">Enter your phone</string>
+    <string name="enter_country_code">Enter country code</string>
+    <string name="verify_phone">Verify phone</string>
+    <string name="phone_login">Phone Login</string>
+
+    <string name="verify_sent_email">Verification code sent to your account.Please, check your code!</string>
+    <string name="verify_sent_phone">Verification code sent to your phone.Please, check your code!</string>
+    <string name="email_register">Register with Email</string>
+
+    <string name="recordWorkout">Record Workout</string>
+    <string name="enterWorkout">Enter Workout</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="activity_name">Activity Name</string>
+    <string name="activity_description">Activity Description</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="activity_type">Activity Type</string>
+    <string name="choose_activity_type">Activity Type</string>
+    <string name="choose_filter">Filter</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_time">Select Time</string>
+    <string name="activity_name_cannot_be_blank">Activity name cannot be blank!</string>
+    <string name="activity_type_cannot_be_blank">Activity type cannot be blank!</string>
+    <string name="start_time_cannot_be_blank">Start time cannot be blank!</string>
+    <string name="end_time_cannot_be_blank">End time cannot be blank!</string>
+
+    <string name="notification_title">Reminder</string>
+    <string name="notification_subtitle">Surprise!</string>
+    <string name="permissions_granted">Permissions granted!</string>
+    <string name="error_general">Oops, there was an error@</string>
+
+    <string name="activity_unknown">Unknown</string>
+    <string name="activity_in_vehicle">In Vehicle</string>
+    <string name="activity_on_bicycle">On Bicycle</string>
+    <string name="activity_on_foot">On Foot</string>
+    <string name="activity_running">Running</string>
+    <string name="activity_still">Still</string>
+    <string name="activity_tilting">Tilting</string>
+    <string name="activity_walking">Walking</string>
+
+    <string name="activity_time">Activity Start: %s</string>
+    <string name="elapsed_time">Elapsed Time: %s</string>
+    <string name="most_probable_activity" formatted="false">Most Probable Activity: %s . Confidence: %d</string>
+    <string name="probable_activities">Probable Activities: %s</string>
+    <string name="running_confidence">Confidence User is Running: %d</string>
+    <string name="start_workout">Start Workout</string>
+    <string name="title_activities">Activities</string>
+    <string name="title_step">Step</string>
+    <string name="title_profile">Profile</string>
+    <string name="log_in">Log in..</string>
+    <string name="todo">todo</string>
+    <string name="loading">Loading ..</string>
+    <string name="workout_detail">Workout Detail</string>
+    <string name="finish">Finish</string>
+    <string name="calories">Calories</string>
+    <string name="duration">Duration</string>
+    <string name="distance">Distance</string>
+    <string name="speed">Speed</string>
+    <string name="pace">Pace</string>
+    <string name="counter">counter</string>
+    <string name="distance_in_m">Distance (in meter)</string>
+    <string name="distance_cannot_be_blank">Distance cannot be blank or smaller than 20 meter.</string>
+    <string name="start_date_cannot_be_after_end_date">Start date cannot be after end date</string>
+    <string name="delete">Delete</string>
+    <string name="it_is_started">It is not finished yet.</string>
+    <string name="filter">Filter</string>
+    <string name="add_workout_fail">Added fail when adding activity record</string>
+    <string name="add_workout_fail_start">Added fail when starting activity record</string>
+    <string name="stopped_fail">Stopped fail when stopping activity record</string>
+
+    <string name="inactivity_notification">You have not moved for a long time. Take action for a healthy life!</string>
+    <string name ="period_of_inactivity_notification">Period of inactivity notification</string>
+    <string name="inactivity_title">Health</string>
+
+</resources>

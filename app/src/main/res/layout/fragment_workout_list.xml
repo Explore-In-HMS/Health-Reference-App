@@ -1,0 +1,111 @@
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <variable name="viewModel" type="com.hms.referenceapp.healthylifeapp.ui.main.workout.WorkoutListViewModel" />
+        <variable name="resId" type="Integer" />
+        <variable name="init" type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".ui.workout.WorkoutListActivity">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/workoutList"
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_80"
+                        app:setAdapter="@{viewModel.getAdapter()}">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <com.github.clans.fab.FloatingActionMenu
+                        android:id="@+id/workoutListMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="10dp"
+                        app:menu_animationDelayPerItem="50"
+                        app:menu_colorNormal="@color/colorPrimary"
+                        app:menu_colorPressed="@color/colorPrimaryDark"
+                        app:menu_icon="@drawable/fab_add"
+                        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right">
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/recordWorkoutFab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_play_white_18dp"
+                            app:fab_colorNormal="@color/colorPrimary"
+                            app:fab_colorPressed="@color/colorPrimaryDark"
+                            app:fab_label="@string/recordWorkout"
+                            app:fab_size="mini" />
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/enterWorkoutRecordFab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_plus_white_18dp"
+                            app:fab_colorNormal="@color/colorPrimary"
+                            app:fab_colorPressed="@color/colorPrimaryDark"
+                            app:fab_label="@string/enterWorkout"
+                            app:fab_size="mini" />
+
+                    </com.github.clans.fab.FloatingActionMenu>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  -->
+
+<resources>
+    <color name="colorPrimary">#CE0E2D</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#9E9E9E</color>
+
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_80">#37474F</color>
+    <color name="white">#ffffff</color>
+
+    <color name="colorNull">#fafafa</color>
+    <color name="black">#000</color>
+
+    <color name="login_start_color">#11998e</color>
+    <color name="login_end_color">#38ef7d</color>
+
+    <color name="register_start_color">#bdc3c7</color>
+    <color name="register_end_color">#2c3e50</color>
+
+    <color name="light_green_500">#8BC34A</color>
+    <color name="light_green_600">#7CB342</color>
+
+    <color name="indigo_400">#5C6BC0</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_600">#3949AB</color>
+
+    <color name="update_start_color">#CE0E2D</color>
+    <color name="update_end_color">#D32F2F</color>
+
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#2196F3</color>
+    <color name="orange">#FF5722</color>
+    <color name="amber">#FFC107</color>
+</resources>
