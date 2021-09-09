@@ -2,18 +2,40 @@
 
 ![Latest Version](https://img.shields.io/badge/latestVersion-1.0-yellow) ![Kotlin](https://img.shields.io/badge/language-kotlin-blue) ![Minimum SDK Version](https://img.shields.io/badge/minSDK-26-orange) ![Android Gradle Version](https://img.shields.io/badge/androidGradleVersion-4.0.1-green) ![Gradle Version](https://img.shields.io/badge/gradleVersion-6.5-informational)
 
-<table>
-  <tbody>
-    <tr>
-      <td><img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Login.png"></td>
-      <td><img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Add_Workout.png"></td>
-      <td><img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Activities.png"></td>
-      <td><img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Step_Tracker.png"></td>
-    </tr>
-  </tbody>
- </table>
+<table>   
+<tr>
+<td>
+<img src="/art/Login.png" width="300"/>
+    
+</td>
+<td>
+<img src="/art/Add_Workout.png" width="300"/>
+    
+</td>
+<td>
+<img src="/art/Activities.png" width="300"/>
+    
+</td>
+<td>
+<img src="/art/Step_Tracker.png" width="300"/>
+    
+</td>
+</tr>
 
-# Introduction
+<tr>
+<td>
+<img src="/art/Filter.png" width="300"/>
+    
+</td>
+<td>
+<img src="/art/Profile.png" width="300"/>
+    
+</td>
+</tr>
+</table>
+
+
+## Introduction
 
 Healthy Life is a reference application for Hms Kits to phones running with the android- based Hms Service.
 Healthy Life App is provides the facility to create and monitor the physical activities necessary for a healthy life.
@@ -21,42 +43,19 @@ Whether you walk or run, hike or bike, play indoor or outdoor sports, you can ad
 and activities in a single app using the various trackers. It watches your daily steps and keeps your weekly
 and monthly records. It is developed with Kotlin.
 
-Project architecture is MVVM.
+## Project Structure
 
-# HUAWEI Health Kit
+Healthy Life App app is designed with MVVM design pattern and Kotlin is used for development.
 
-HUAWEI Health Kit (Health Kit for short) allows ecosystem apps to access fitness and health data of users based on their HUAWEI ID and authorization. For consumers, Health Kit provides a mechanism for fitness and health data storage and sharing based on flexible authorization. For developers and partners, Health Kit provides a data platform and fitness and health open capabilities, so that they can build related apps and services based on a multitude of data types. Health Kit connects the hardware devices and ecosystem apps to provide consumers with health care, workout guidance, and ultimate service experience.
+## What You Will Need
 
-# Awareness Kit
-
-HUAWEI Awareness Kit provides your app with the ability to obtain contextual information including users' current time, location, behavior, audio device status, ambient light, weather, and nearby beacons. Your app can gain insight into a user's current situation more efficiently, making it possible to deliver a smarter, more considerate user experience.
-
-# Account Kit
-
-Account Kit provides you with simple, secure, and quick sign-in and authorization functions. Instead of entering accounts and passwords and waiting for authentication, users can just tap the Sign in with HUAWEI ID button to quickly and securely sign in to your app with their HUAWEI IDs.
-
-# Auth Service
-
-Auth Service provides SDKs and backend services, supports multiple authentication modes, and provides a powerful management console, enabling you to easily develop and manage user authentication.
-
-# Analytics Kit
-
-HUAWEI Analytics Kit offers a rich array of preset analytics models that help you gain an in-depth insight into your users, products, and content. With this insight, you can then take a data-driven approach to make informed decisions for product and marketing optimizations.
-
-# Crash Service
-
-The AppGallery Connect Crash service provides a powerful yet lightweight solution to app crash problems. With the service, you can quickly detect, locate, and resolve app crashes (unexpected exits of apps), and have access to highly readable crash reports in real time, without the need to write any code.
-
-# What You Will Need
-
-**Hardware Requirements**
-- A computer that can run Android Studio.
-- A Huawei phone for debugging.
-
-**Software Requirements**
-- Android SDK package
-- Android Studio 3.X-4.X
-- HMS Core (APK) 4.X or later
+### Hardware Requirements
+-	A computer that can run Android Studio.
+-	A Huawei phone for debugging.
+### Software Requirements
+-	Android SDK package
+-	Android Studio 3.X-4.X
+-	HMS Core (APK) 4.X or later
 
 ## Getting Started
 
@@ -66,43 +65,64 @@ After creating the application, you need to [generate a signing certificate fing
 - Go to "My Projects" in AppGallery Connect.
 - Find your project from the project list and click the app on the project card.
 - On the Project Setting page, set SHA-256 certificate fingerprint to the SHA-256 fingerprint you've generated.
+
 ![AGC-Fingerprint](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200511174103.08977471998788006824067329965155:50510612082412:2800:6930AD86F3F5AF6B2740EF666A56165E65A37E64FA305A30C5EFB998DA38D409.png?needInitFileName=true?needInitFileName=true?needInitFileName=true?needInitFileName=true)
 
-# Using the application
+## Using the application
 
-- Before you run the app, make sure that you have a working internet connection since the application uses Huawei Mobile Services. Otherwise, the app will not be able to perform the security checks only after which you can use the app.
+Before you run the app, make sure that you have a working internet connection since the application uses Huawei Mobile Services. Otherwise, the app will not be able to perform the security checks only after which you can use the app.
 
 When the user first enter the application, the login screen opens, the login process with the account kit is made, after the health kit permissions are made and the necessary permissions are obtained, the home screen is switched to. There are 3 tabs on the main screen. The first tab can display your activities. You can filter your activities yearly, monthly and weekly in the upper right corner. The user can view activity records on the application and created from official Health app as a list. The user can add, start, end or delete activities through the application. Health Kit used for this use case. In the second tab,the user can see the step data and calorie created by the health application as a list up to the last 3 months . At the top, the user can view your step with your daily goal in the progress bar in card view. The third tab is the profile part. Here your information is displayed. Our application sends you notification according to your inactivity. We can detect the inactivity of the users thanks to the behavior feature of the Awareness Kit. This notification is sent every 30 minutes by default. If you want, you can change the duration of this notification. We have a logout button on the top right. You must click here to log out of the application.
 
-## Screenshots
+## Implemented Kits And Services
 
-<img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Login.png"></img>
-<img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Add_Workout.png"></img>
-<img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Activities.png"></img>
-<img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Filter.png"></img>
-<img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Step_Tracker.png"></img>
-<img src="https://github.com/Explore-In-HMS/Health-Reference-App/blob/master/art/Profile.png"></img>
+### Huawei Health Kit
 
-## Project Structure
+HUAWEI Health Kit (Health Kit for short) allows ecosystem apps to access fitness and health data of users based on their HUAWEI ID and authorization. For consumers, Health Kit provides a mechanism for fitness and health data storage and sharing based on flexible authorization. For developers and partners, Health Kit provides a data platform and fitness and health open capabilities, so that they can build related apps and services based on a multitude of data types. Health Kit connects the hardware devices and ecosystem apps to provide consumers with health care, workout guidance, and ultimate service experience. For more information: [**Health Kit**](https://developer.huawei.com/consumer/en/hms/huaweihealth/)
 
-Healthy Life App is designed with MVVM design pattern.
+### Huawei Awareness Kit
 
-## Libaries
- - Health Kit
- - Awareness Kit
- - Account Kit
- - Auth Service
- - Analytics Kit
- - Crash Service
- - Retrofit
- - Gson
- - Material Components
- - Cardview
- - Fab
- - Circular Progress Bar
- - Glide
+HUAWEI Awareness Kit provides your app with the ability to obtain contextual information including users' current time, location, behavior, audio device status, ambient light, weather, and nearby beacons. Your app can gain insight into a user's current situation more efficiently, making it possible to deliver a smarter, more considerate user experience. For more information: [**Awareness Kit**](https://developer.huawei.com/consumer/en/hms/huawei-awarenesskit/)
+
+### Huawei Account Kit
+
+Account Kit provides you with simple, secure, and quick sign-in and authorization functions. Instead of entering accounts and passwords and waiting for authentication, users can just tap the Sign in with HUAWEI ID button to quickly and securely sign in to your app with their HUAWEI IDs. For more information: [**Account Kit**](https://developer.huawei.com/consumer/en/hms/huawei-accountkit/)
+
+### Huawei Auth Service
+
+Auth Service provides SDKs and backend services, supports multiple authentication modes, and provides a powerful management console, enabling you to easily develop and manage user authentication. For more information: [**Auth Service**](https://developer.huawei.com/consumer/en/agconnect/auth-service/)
+
+### Huawei Analytics Kit
+
+HUAWEI Analytics Kit offers a rich array of preset analytics models that help you gain an in-depth insight into your users, products, and content. With this insight, you can then take a data-driven approach to make informed decisions for product and marketing optimizations. For more information: [**Analytics Kit**](https://developer.huawei.com/consumer/en/hms/huawei-analyticskit)
+
+### Huawei Crash Service
+
+The AppGallery Connect Crash service provides a powerful yet lightweight solution to app crash problems. With the service, you can quickly detect, locate, and resolve app crashes (unexpected exits of apps), and have access to highly readable crash reports in real time, without the need to write any code. For more information: [**Crash Service**](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-introduction)
+
+### Libraries
+
+- [Retrofit](https://github.com/square/retrofit/)
+- [Google Gson](https://github.com/google/gson/)
+- [Cardview](https://developer.android.com/jetpack/androidx/releases/cardview/)
+- [Fab](https://github.com/Clans/FloatingActionButton/)
+- [Circular Progress Bar](https://github.com/lopspower/CircularProgressBar/)
+- [Glide](https://github.com/bumptech/glide/)
 
 ## Contributors
- - Çağnur Hacımahmutoğlu
- - Tuğrul Altun
 
+- Çağnur Hacımahmutoğlu
+- Tuğrul Altun
+
+## Licence
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
